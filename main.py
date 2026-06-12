@@ -98,7 +98,7 @@ def main():
     is_compromised = local_wordlist_scan(password, args.wordlist)
     time.sleep(0.8)
     
-    print("🔎 data base dikkatlice aranıyor. (2)")
+    print("🔎The database is being carefully searched. (2)")
     time.sleep(0.8)
     
     if is_compromised:
@@ -107,10 +107,10 @@ def main():
         print("   It is highly recommended to change it immediately.")
         sys.exit(1)
     else:
-        print(f"{Colors.GREEN}✅ şifreniz güvenlidir en popüler wordlists dosyasında şifreniz geçmiyor.{Colors.RESET}\n")
+        print(f"{Colors.GREEN}✅ Your password is secure. It does not appear in the most commonly used wordlists. {Colors.RESET}\n")
         time.sleep(1)
         
-        sys.stdout.write("⚙️ ŞİFRE TEKRAR DENETLENİYOR")
+        sys.stdout.write("⚙️ PASSWORD is being re-checked.")
         for _ in range(4):
             sys.stdout.write(".")
             sys.stdout.flush()
@@ -137,7 +137,7 @@ def main():
         print("-" * 40 + "\n")
 
         if not is_strong or entropy < 40:
-            print(f"{Colors.RED}❌ RESULT: kötü şifre değiştirebilirsin!{Colors.RESET}")
+            print(f"{Colors.RED}❌ RESULT: bad password you can change!{Colors.RESET}")
             print("   Identified Vulnerabilities:")
             for f in feedback:
                 print(f"   - {f}")
