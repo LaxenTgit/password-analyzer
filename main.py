@@ -154,3 +154,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(f"\n{Colors.YELLOW}Process terminated. Exiting...{Colors.RESET}")
         sys.exit(0)
+
+# BİTTİ SONUNDA VALLA ÇOK YORULDUM 🥀
