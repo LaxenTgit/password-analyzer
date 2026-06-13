@@ -94,7 +94,7 @@ def main():
     else:
         password = args.password
 
-    print("🔍 data base inceleniyor. (1)")
+    print("🔍 data base searching... (1)")
     is_compromised = local_wordlist_scan(password, args.wordlist)
     time.sleep(0.8)
     
