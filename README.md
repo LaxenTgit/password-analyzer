@@ -29,7 +29,7 @@ password-analyzer/
 │   ├─ scanner.py
 │
 ├─ wordlists/
-│   └─ wordlists.txt
+│   └─ wordlist.txt
 │
 ├─ utils/
 │   └─ colors.py
